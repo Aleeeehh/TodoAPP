@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> TODOLIST</title>
+    <link rel="icon" href="immagini/icon.png" alt="icona"> <!-- creo l'icona-->
+    <link rel="stylesheet" href="todolist.css"> <!-- collego il css ad html -->
+
+</head>
+
+<body>
+    <div class="container"> <!-- creo container, per evitare
+         stratch della pagina quando allungata, "tecnica container"-->
+        <!-- intestazione, google capisce che questa è l'intestazione della pagina-->
+        <header class="panel">
+            <h1> TODOLIST APP</h1>
+            <img src="immagini/icon.png" alt="icona ripetuta" width="50px"> <!-- importo icona-->
+        </header>
+
+        <main>
+            <!-- messaggio che appare se non ho messo nessuna attività-->
+            <p class="empty-message"> </p>
+
+            <!-- lista di attività-->
+            <ul class="list"> </ul>
+
+            <!-- pannello per aggiungere attività-->
+            <div class="panel add">
+                <input type="text" placeholder="Aggiungi attività">
+                <!-- striscia bianca per scrivere attività-->
+
+                <button>
+                    <img src="immagini/add.svg" alt="Icona di aggiunta">
+                    <!-- bottone da cliccare per aggiungere attività-->
+                </button>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- inserisdco il javascript-->
+    <script src="todolist.js">
+    </script>
+</body>
+
+</html>

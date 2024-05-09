@@ -1,0 +1,121 @@
+/*
+COLOR PALETTE
+  lightgreen: rgb(210, 239, 232); 
+  green: rgb(95, 198, 173); 
+  yellow: rgb(217, 255, 102);
+  blue: rgb(52, 75, 201);
+*/
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utilities*/
+.container {
+    margin: 0 auto;
+    max-width: 540px;
+    /* l'applicazione rimane centrata nello schermo quando si allunga
+    la finestra, ed è fissata inoltre una larghezza massima */
+}
+
+/* Generiche  */
+body {
+    padding: 16px;
+    /* spazio di tutti gli oggetti dal bordo della finestra*/
+    font-family: Inter, sans-serif;
+    background-color: rgb(210, 239, 232);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+/* Pannello */
+.panel {
+    padding: 16px;
+    border-radius: 16px;
+    background-color: rgb(95, 198, 173);
+}
+
+
+input {
+    font-size: 16px;
+    padding: 16px;
+    /* spazio vuoto esterno al bordo*/
+    border-radius: 16px;
+    border: none;
+    /* elimina il bordo*/
+    flex-grow: 1;
+    /* occupa tutto lo spazio disponibile,
+    tale parametro si può usare anche per stabilire il rapporto di 
+    dimensione, tra gli elementi di uno stesso contenitore*/
+    /* se ad*/
+}
+
+button {
+    cursor: pointer;
+    /* mette la manina*/
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgb(253, 234, 252);
+}
+
+.add {
+    display: flex;
+    /* crea un contenitore flex, i componenti al suo interno, si disporranno
+    secondo le regole che definiamo (in questo caso i componenti
+    all'interno del pannello, il bottone e barra di scrittura)*/
+    gap: 8px;
+    /*il gap è lo spazio, tra gli elementi del contenitore*/
+    margin-top: 16px;
+}
+
+.empty-message {
+    text-align: center;
+    font-weight: bold;
+    /*grassetto*/
+    font-size: 18px;
+
+}
+
+.list-item {
+    list-style-type: none;
+    /* elimina o cambia tipo del puntino della lista*/
+    display: flex;
+    /* si può notare subito, che flex box mette gli elementi della
+    classe list-item, nella stessa riga, e no più uno sopra l'altro*/
+    align-items: center;
+    /* allina per bene gli elementi */
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    margin: 16px 0px;
+    /* voglio 16px di distanza sopra e sotto,
+    e 0px di distanza ai lati*/
+
+}
+
+.text {
+    padding: 16px;
+    /*pixel di distanza dalle cose attorno*/
+}
+
+.check {
+    cursor: pointer;
+    padding: 16px;
+    background-color: rgb(253, 234, 252);
+    border-radius: 16px 0px 0px 16px;
+    /* stabilisco smussamento
+    per ogni angolo del blocco*/
+}
